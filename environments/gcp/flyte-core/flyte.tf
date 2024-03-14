@@ -1,5 +1,5 @@
 locals {
-  flyte-host =           "${local.application}.${local.dns-domain}" #If you plan on using a different FQDN for Flyte, replace this with your FQDN (e.g flyte.example.com)
+  flyte-host =           "${local.dns-domain}" #If you plan on using a different FQDN for Flyte, replace this with your FQDN (e.g flyte.example.com)
 }
 
 #Installs the flyte-core Helm chart in the flyte namespace using the outputs of Terraform modules

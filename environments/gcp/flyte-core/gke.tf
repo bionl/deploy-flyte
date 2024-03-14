@@ -22,7 +22,7 @@ module "gke" {
   node_pools = [
     {
       name         = "default"
-      machine_type = "e2-standard-4"
+      machine_type = "e2-standard-2"
       min_count    = 0
       max_count    = 3
       # Set to true if you want to enable Image Streaming. Learn more: https://cloud.google.com/kubernetes-engine/docs/how-to/image-streaming to speed up pulling of images
